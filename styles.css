@@ -92,3 +92,19 @@ select {
     background-position-x: calc(100% - 20px);       
     background-position-y: 20px;       
 }
+
+@media only screen and (max-width : 480px) {
+    .hero h1 {
+        font-size: 30px; /* Decrease the font size for smaller screens */
+    }
+ 
+    textarea {
+        width: 100%; /* Make the textarea full width on smaller screens */
+        height:auto; /* Allow the textarea to expand vertically as needed */
+    }
+ 
+    .row {
+        flex-direction: column; /* Stack the elements vertically on smaller screens */
+        gap: 10px; /* Reduce the gap between elements */
+    }
+ }
